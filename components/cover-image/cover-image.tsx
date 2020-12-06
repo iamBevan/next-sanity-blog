@@ -17,10 +17,10 @@ const CoverImage = ({
 	const image = (
 		<>
 			<img
-				width={1240}
-				height={540}
+				// width={1240}
+				// height={540}
 				alt={`Cover Image for ${title}`}
-				src={imageBuilder(imageObject).width(1240).height(540).url()}
+				src={imageBuilder(imageObject).width(1280).height(540).url()}
 			/>
 			<div className={styles.overlay}></div>
 		</>

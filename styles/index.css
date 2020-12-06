@@ -1,15 +1,5 @@
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-article a {
-	color: rgb(49, 49, 182);
-	text-decoration: underline;
-}
-/* purgecss end ignore */
-@tailwind utilities;
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 /* Document
 ========================================================================== */
 
@@ -22,6 +12,7 @@ html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 	background: rgb(27, 27, 27);
+	font-family: "Oxygen", sans-serif;
 }
 
 /* Sections
@@ -86,6 +77,27 @@ pre {
 
 a {
 	background-color: transparent;
+}
+
+/* unvisited link */
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	color: white;
+}
+
+/* mouse over link */
+a:hover {
+	color: white;
+}
+
+/* selected link */
+a:active {
+	color: white;
 }
 
 /**
