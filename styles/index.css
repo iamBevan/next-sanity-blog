@@ -9,5 +9,5 @@ article a {
 @tailwind utilities;
 
 html {
-	background: black;
+	background: rgb(27, 27, 27);
 }
