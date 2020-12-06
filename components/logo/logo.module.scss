@@ -1,0 +1,31 @@
+.logo {
+	height: 70px;
+	width: 70px;
+	background: orangered;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&.small {
+		height: 36px;
+		width: 36px;
+
+		.name {
+			margin-left: -2px;
+			margin-bottom: 6px;
+			text-align: center;
+			width: 100%;
+			font-weight: 700;
+			font-size: 35px;
+		}
+	}
+
+	.name {
+		margin-left: -5px;
+		margin-bottom: 8px;
+		text-align: center;
+		width: 100%;
+		font-weight: 700;
+		font-size: 70px;
+	}
+}

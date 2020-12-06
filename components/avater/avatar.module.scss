@@ -1,0 +1,16 @@
+.avatar {
+	align-items: center;
+	display: flex;
+
+	> img {
+		border-radius: 9999px;
+		height: 3rem;
+		width: 3rem;
+		margin-right: 1rem;
+	}
+
+	.name {
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+}
