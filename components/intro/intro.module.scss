@@ -1,0 +1,17 @@
+.intro {
+	// background-color: lightcoral;
+	display: flex;
+	align-items: center;
+
+	h1 {
+		font-size: 90px;
+		font-weight: 700;
+		margin-left: 10px;
+	}
+
+	h4 {
+		padding-left: 400px;
+		flex: 1;
+		align-self: auto;
+	}
+}

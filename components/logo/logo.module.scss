@@ -1,0 +1,17 @@
+.logo {
+	height: 70px;
+	width: 70px;
+	background: orangered;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.name {
+		margin-left: -5px;
+		margin-bottom: 8px;
+		text-align: center;
+		width: 100%;
+		font-weight: 700;
+		font-size: 65px;
+	}
+}
