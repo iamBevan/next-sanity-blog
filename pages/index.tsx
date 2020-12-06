@@ -1,10 +1,16 @@
-import { Container, MoreStories, HeroPost, Intro, Layout } from "../components"
+import {
+	Container,
+	MoreStories,
+	HightLightPost,
+	Intro,
+	Layout,
+} from "../components"
 import { getAllPostsForHome } from "../lib/api"
 import Head from "next/head"
 import { CMS_NAME } from "../lib/constants"
 
 export default function Index({ allPosts, preview }) {
-	const heroPost = allPosts[0]
+	const highlightPost = allPosts[0]
 	const morePosts = allPosts.slice(1)
 	return (
 		<>
@@ -14,14 +20,14 @@ export default function Index({ allPosts, preview }) {
 				</Head>
 				<Container>
 					<Intro />
-					{heroPost && (
-						<HeroPost
-							title={heroPost.title}
-							coverImage={heroPost.coverImage}
-							date={heroPost.date}
-							author={heroPost.author}
-							slug={heroPost.slug}
-							excerpt={heroPost.excerpt}
+					{highlightPost && (
+						<HightLightPost
+							title={highlightPost.title}
+							coverImage={highlightPost.coverImage}
+							date={highlightPost.date}
+							author={highlightPost.author}
+							slug={highlightPost.slug}
+							excerpt={highlightPost.excerpt}
 						/>
 					)}
 					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
