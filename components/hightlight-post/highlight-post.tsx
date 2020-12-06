@@ -1,6 +1,6 @@
 import { Avatar, Date, CoverImage } from "../"
 import Link from "next/link"
-import styles from "./hero-post.module.scss"
+import styles from "./hightlight-post.module.scss"
 
 export function HightLightPost({
 	title,
