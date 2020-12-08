@@ -11,7 +11,7 @@ export function HightLightPost({
 	slug,
 }) {
 	return (
-		<section className={styles.heroPost}>
+		<section className={styles.highlightpost}>
 			<div>
 				<CoverImage
 					slug={slug}

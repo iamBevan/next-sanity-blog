@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 /* Document
 ========================================================================== */
-
+:root {
+	--blue: #1e90ff;
+	--white: #ffffff;
+}
 /**
 * 1. Correct the line height in all browsers.
 * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -12,17 +15,17 @@ html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 	background: rgb(27, 27, 27);
-	font-family: "Oxygen", sans-serif;
 }
 
 /* Sections
-     ========================================================================== */
+========================================================================== */
 
 /**
-   * Remove the margin in all browsers.
-   */
+* Remove the margin in all browsers.
+*/
 
 body {
+	/* font-family: "Oxygen", sans-serif; */
 	margin: 0;
 }
 
