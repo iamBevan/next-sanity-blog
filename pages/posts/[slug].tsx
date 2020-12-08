@@ -15,6 +15,7 @@ import {
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api"
 import Head from "next/head"
 import { CMS_NAME } from "../../lib/constants"
+import { Categories } from "../../components/categories/categories"
 
 export default function Post({ post, morePosts, preview }) {
 	const router = useRouter()
@@ -45,6 +46,7 @@ export default function Post({ post, morePosts, preview }) {
 							/>
 							<PostBody content={post.body} />
 						</article>
+						<Categories categories={post.categories} />
 
 						<Comments comments={post.comments} />
 						<Form _id={post._id} />

@@ -12,6 +12,13 @@ export default {
       name: 'description',
       title: 'Description',
       type: 'text'
+    },
+    {
+      name: 'post',
+      type: 'reference',
+      to: [
+        {type: 'post'}
+      ]
     }
   ]
 }
