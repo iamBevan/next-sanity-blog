@@ -26,7 +26,7 @@
 	--foreground: RGB(226, 223, 218);
 }
 
-html {
+body {
 	font-family: var(--font-primary);
 	background: var(--background);
 	color: var(--foreground);
