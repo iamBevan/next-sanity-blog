@@ -1,2 +1,5 @@
+export * from "./author"
+export * from "./blockContent"
 export * from "./category"
 export * from "./comment"
+export * from "./post"
