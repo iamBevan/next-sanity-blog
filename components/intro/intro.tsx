@@ -9,20 +9,8 @@ export function Intro() {
 			<h1>Blog.</h1>
 			<h4>
 				A statically generated blog example using{" "}
-				<a
-					href='https://nextjs.org/'
-					className='underline hover:text-success duration-200 transition-colors'
-				>
-					Next.js
-				</a>{" "}
-				and{" "}
-				<a
-					href={CMS_URL}
-					className='underline hover:text-success duration-200 transition-colors'
-				>
-					Sanity.io
-				</a>
-				.
+				<a href='https://nextjs.org/'>Next.js</a> and{" "}
+				<a href={CMS_URL}>Sanity.io</a>.
 			</h4>
 		</section>
 	)
