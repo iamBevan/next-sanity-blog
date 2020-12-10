@@ -13,8 +13,8 @@
 
 :root {
 	/* default theme */
-	--background: white;
-	--foreground: black;
+	--background: #fff;
+	--foreground: #000;
 
 	--font-primary: "Montserrat", sans-serif;
 	--font-secondary: "Poppins", sans-serif;
@@ -22,8 +22,8 @@
 
 [data-theme="dark"] {
 	/* default theme */
-	--background: white;
-	--foreground: black;
+	--background: #000;
+	--foreground: #fff;
 }
 
 body {
