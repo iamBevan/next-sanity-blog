@@ -13,8 +13,8 @@
 
 :root {
 	/* default theme */
-	--background: RGB(226, 223, 218);
-	--foreground: RGB(38, 38, 38);
+	--background: white;
+	--foreground: black;
 
 	--font-primary: "Montserrat", sans-serif;
 	--font-secondary: "Poppins", sans-serif;
@@ -22,8 +22,8 @@
 
 [data-theme="dark"] {
 	/* default theme */
-	--background: RGB(38, 38, 38);
-	--foreground: RGB(226, 223, 218);
+	--background: white;
+	--foreground: black;
 }
 
 body {
