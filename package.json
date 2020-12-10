@@ -25,11 +25,9 @@
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.7.0",
     "sass": "^1.30.0",
-    "swr": "^0.2.3",
-    "use-dark-mode": "^2.3.1"
+    "swr": "^0.2.3"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@sanity/cli": "^2.0.5",
     "lerna": "^3.22.1",
     "postcss-preset-env": "^6.7.0",

@@ -1,5 +1,5 @@
 import { ThemeProvider } from "next-themes"
-// import "normalize.css"
+import "normalize.css"
 import "../styles/index.css"
 
 function MyApp({ Component, pageProps }) {

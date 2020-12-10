@@ -1,10 +1,10 @@
 import Link from "next/link"
-import useDarkMode from "use-dark-mode"
 // import { Logo } from "../icons/svgr"
+import { useTheme } from "next-themes"
 import styles from "./header.module.scss"
 
 export function Header() {
-	const darkMode = useDarkMode(false)
+	const { theme, setTheme } = useTheme()
 
 	return (
 		<header className={styles.header}>
@@ -23,8 +23,8 @@ export function Header() {
 				</ul>
 			</div>
 			<div className={styles.buttons}>
-				<button onClick={darkMode.disable}>Light Mode</button>
-				<button onClick={darkMode.enable}>Dark Mode</button>
+				<button onClick={() => setTheme("light")}>Light Mode</button>
+				<button onClick={() => setTheme("dark")}>Dark Mode</button>
 			</div>
 		</header>
 	)
