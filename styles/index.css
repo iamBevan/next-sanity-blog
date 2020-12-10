@@ -20,28 +20,24 @@
 	--font-secondary: "Poppins", sans-serif;
 }
 
-/* [data-theme="dark"] {
-	--background: #000;
-	--foreground: #fff;
-}
-
 body {
 	font-family: var(--font-primary);
-	background: var(--background);
-	color: var(--foreground);
-	transition: background 0.5s;
+	/* background: var(--background); */
+	/* color: var(--foreground); */
+	/* transition: background 0.5s; */
 }
 
 a {
 	color: var(--foreground);
-} */
+}
 
 body.light-mode {
 	background-color: #fff;
 	color: #333;
-	transition: background-color 0.3s ease;
+	transition: background-color 0.6s ease;
 }
 body.dark-mode {
 	background-color: #1a1919;
 	color: #999;
+	transition: background-color 0.6s ease;
 }
