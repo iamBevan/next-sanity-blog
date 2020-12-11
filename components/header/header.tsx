@@ -23,14 +23,14 @@ export function Header() {
 				</ul>
 			</div>
 			<div className={styles.buttons}>
-				<ToggleButton
+				{/* <ToggleButton
 					checked={theme === "light" ? false : true}
 					onChange={() =>
 						// setTheme(theme === "light" ? "dark" : "light")
 						console.log("dog")
 					}
 					key={1}
-				/>
+				/> */}
 				<Toggle
 					defaultChecked={theme === "light" ? false : true}
 					aria-label='Toggle theme'
@@ -61,7 +61,10 @@ export function Header() {
 							</div>
 						),
 					}}
-					onChange={onChange}
+					onChange={() =>
+						// setTheme(theme === "light" ? "dark" : "light")
+						console.log("dog")
+					}
 				/>
 			</div>
 		</header>
