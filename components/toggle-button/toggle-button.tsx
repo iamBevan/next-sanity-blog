@@ -38,7 +38,7 @@ export function ToggleButton({ checked, onChange }: ToggleButtonProps) {
 					</div>
 				),
 			}}
-			onChange={() => onChange}
+			onChange={onChange}
 		/>
 	)
 }
