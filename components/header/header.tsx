@@ -1,8 +1,11 @@
 import Link from "next/link"
+// import { Logo } from "../icons/svgr"
 import { useTheme } from "next-themes"
 import styles from "./header.module.scss"
 import Toggle from "react-toggle"
-import "react-toggle/style.css"
+import { useState } from "react"
+import { Moon } from "../icons/svgr"
+import { ToggleButton } from "../toggle-button/toggle-button"
 
 export function Header() {
 	const { theme, setTheme } = useTheme()
@@ -23,36 +26,8 @@ export function Header() {
 				</ul>
 			</div>
 			<div className={styles.buttons}>
-				<Toggle
-					defaultChecked={theme === "light" ? false : true}
-					aria-label='Toggle theme'
-					className='custom-classname'
-					icons={{
-						checked: (
-							<div
-								style={{
-									fontSize: "0.9em",
-									position: "absolute",
-									top: "0.36em",
-									left: "-0.35em",
-								}}
-							>
-								🌙
-							</div>
-						),
-						unchecked: (
-							<div
-								style={{
-									fontSize: "0.9em",
-									position: "absolute",
-									top: "0.36em",
-									left: "-0.3em",
-								}}
-							>
-								🌞
-							</div>
-						),
-					}}
+				<ToggleButton
+					checked={theme === "light" ? false : true}
 					onChange={() =>
 						setTheme(theme === "light" ? "dark" : "light")
 					}
