@@ -38,7 +38,7 @@ export function Header() {
 					key={1}
 				/> */}
 				<Toggle
-					defaultChecked={theme === "light" ? false : true}
+					// defaultChecked={theme === "light" ? false : true}
 					aria-label='Toggle theme'
 					// className='custom-classname'
 					icons={{
