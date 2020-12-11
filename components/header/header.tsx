@@ -4,6 +4,7 @@ import styles from "./header.module.scss"
 import { ToggleButton } from "../toggle-button/toggle-button"
 import Toggle from "react-toggle"
 import { useEffect } from "react"
+import "react-toggle/style.css"
 
 export function Header() {
 	const { theme, setTheme } = useTheme()
