@@ -25,7 +25,8 @@ export function Header() {
 				<ToggleButton
 					checked={theme === "light" ? false : true}
 					onChange={() =>
-						setTheme(theme === "light" ? "dark" : "light")
+						// setTheme(theme === "light" ? "dark" : "light")
+						console.log("dog")
 					}
 				/>
 			</div>
