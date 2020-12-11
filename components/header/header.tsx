@@ -3,9 +3,14 @@ import { useTheme } from "next-themes"
 import styles from "./header.module.scss"
 import { ToggleButton } from "../toggle-button/toggle-button"
 import Toggle from "react-toggle"
+import { useEffect } from "react"
 
 export function Header() {
 	const { theme, setTheme } = useTheme()
+
+	useEffect(() => {
+		setTheme("light")
+	}, [])
 
 	return (
 		<header className={styles.header}>
