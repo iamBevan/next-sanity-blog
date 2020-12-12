@@ -46,8 +46,7 @@ export function Header() {
 						unchecked: null,
 					}}
 					onChange={() =>
-						// setTheme(theme === "light" ? "dark" : "light")
-						console.log("dog")
+						setTheme(theme === "light" ? "dark" : "light")
 					}
 				/>
 			</div>
