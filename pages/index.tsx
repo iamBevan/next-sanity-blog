@@ -4,16 +4,29 @@ import {
 	HightLightPost,
 	Intro,
 	Layout,
+	Header,
 } from "../components"
 import { getAllPostsForHome } from "../lib/api"
 import Head from "next/head"
 import { CMS_NAME } from "../lib/constants"
+import { useEffect, useState } from "react"
 
 export default function Index({ allPosts, preview }) {
 	const highlightPost = allPosts[0]
 	const morePosts = allPosts.slice(1)
+	const [theme, setTheme] = useState(null)
+
+	useEffect(() => {
+		setTheme(window.__theme)
+
+		window.__onThemeChange = () => {
+			setTheme(window)
+		}
+	}, [theme])
+
 	return (
 		<>
+			<Header theme={theme} />
 			<Layout preview={preview}>
 				<Head>
 					<title>Next.js Blog Example with {CMS_NAME}</title>
