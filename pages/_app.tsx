@@ -1,14 +1,9 @@
-import { ThemeProvider } from "next-themes"
 import "normalize.css"
-import "../styles/index.css"
+import "../styles/theme.css"
 import "../styles/toggle-button.css"
 
 function MyApp({ Component, pageProps }) {
-	return (
-		<ThemeProvider>
-			<Component {...pageProps} />
-		</ThemeProvider>
-	)
+	return <Component {...pageProps} />
 }
 
 export default MyApp
