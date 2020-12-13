@@ -30,6 +30,7 @@ export default function Index({ allPosts, preview }) {
 			<Layout preview={preview}>
 				<Head>
 					<title>Next.js Blog Example with {CMS_NAME}</title>
+					<link rel='shortcut icon' href='/static/favicon.ico' />
 				</Head>
 				<Container>
 					<Intro />
