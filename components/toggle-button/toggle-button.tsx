@@ -3,13 +3,12 @@ import "react-toggle/style.css"
 
 interface ToggleButtonProps {
 	checked: boolean
-	onChange: () => void
+	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 export function ToggleButton({ checked, onChange }: ToggleButtonProps) {
 	return (
 		<Toggle
-			// defaultChecked={checked}
 			aria-label='Toggle theme'
 			className='custom-classname'
 			icons={{
@@ -39,6 +38,7 @@ export function ToggleButton({ checked, onChange }: ToggleButtonProps) {
 				),
 			}}
 			onChange={onChange}
+			checked={checked}
 		/>
 	)
 }
