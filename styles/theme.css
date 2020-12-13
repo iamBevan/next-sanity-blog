@@ -16,12 +16,12 @@ body {
 
 body.light {
 	--background: #f9f9f9;
-	--foreground: #2d2d2b;
+	--foreground: #0d1117;
 }
 
 body.dark {
 	-webkit-font-smoothing: antialiased;
 
-	--background: #2d2d2b;
+	--background: #0d1117;
 	--foreground: #f9f9f9;
 }
