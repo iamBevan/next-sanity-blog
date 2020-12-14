@@ -11,7 +11,7 @@ body {
 	background-color: var(--background);
 	color: var(--foreground);
 	min-height: 100vh;
-	transition: 0.4s;
+	transition: background-color 0.3s;
 }
 
 body.light {
@@ -24,4 +24,29 @@ body.dark {
 
 	--background: #0d1117;
 	--foreground: #f9f9f9;
+}
+
+a {
+	text-decoration: none;
+	color: var(--foreground);
+}
+
+/* unvisited link */
+a:link {
+	color: var(--foreground);
+}
+
+/* visited link */
+a:visited {
+	color: var(--foreground);
+}
+
+/* mouse over link */
+a:hover {
+	color: hotpink;
+}
+
+/* selected link */
+a:active {
+	color: var(--foreground);
 }
