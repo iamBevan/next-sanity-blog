@@ -8,22 +8,6 @@
 	a {
 		font-size: 26px;
 		font-weight: 900;
-
-		&:link {
-			color: var(--foreground);
-		}
-
-		&:visited {
-			color: var(--foreground);
-		}
-
-		&:hover {
-			color: var(--accent);
-		}
-
-		&:active {
-			color: var(--foreground);
-		}
 	}
 
 	/* unvisited link */
