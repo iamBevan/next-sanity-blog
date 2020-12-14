@@ -16,6 +16,12 @@ const CoverImage = ({
 }: CoverImageProps): JSX.Element => {
 	const image = (
 		<>
+			{/* <Image
+				width={1240}
+				height={540}
+				alt={`Cover Image for ${title}`}
+				src={imageBuilder(imageObject).width(1280).height(540).url()}
+			/> */}
 			<img
 				// width={1240}
 				// height={540}
