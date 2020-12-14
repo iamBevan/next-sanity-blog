@@ -3,14 +3,30 @@
 	margin: auto;
 	border-radius: 7px;
 	color: var(--foreground);
+	padding-bottom: 30px;
 
 	a {
 		font-size: 26px;
 		font-weight: 900;
 
+		&:link {
+			color: var(--foreground);
+		}
+
 		&:visited {
+			color: var(--foreground);
+		}
+
+		&:hover {
+			color: var(--accent);
+		}
+
+		&:active {
+			color: var(--foreground);
 		}
 	}
+
+	/* unvisited link */
 
 	.details {
 		h3 {
@@ -21,6 +37,10 @@
 			font-family: var(--font-secondary);
 			font-size: 15px;
 			font-weight: 300;
+		}
+
+		p {
+			font-size: 15px;
 		}
 	}
 }
