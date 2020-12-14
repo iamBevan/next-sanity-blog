@@ -13,25 +13,25 @@ export function PostPreview({
 }) {
 	return (
 		<div className={styles.postPreview}>
-			<div>
+			{/* <div>
 				<CoverImage
 					slug={slug}
 					title={title}
 					imageObject={coverImage}
 					url={imageBuilder(coverImage).url()}
 				/>
-			</div>
+			</div> */}
 			<div className={styles.info}>
 				<h3>
 					<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 						<a>{title}</a>
 					</Link>
 				</h3>
-				<div className={styles.date}>
+				{/* <div className={styles.date}>
 					<Date dateString={date} />
 				</div>
 				<p>{excerpt}</p>
-				<Avatar name={author?.name} picture={author?.picture} />
+				<Avatar name={author?.name} picture={author?.picture} /> */}
 			</div>
 		</div>
 	)

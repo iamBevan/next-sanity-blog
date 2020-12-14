@@ -1,7 +1,9 @@
-import { Container, MoreStories, HightLightPost, Intro } from "../components"
+import { Container, MoreStories, PostCard, Intro } from "../components"
 import { getAllPostsForHome } from "../lib/api"
 import Head from "next/head"
+import { v4 as uuidv4 } from "uuid"
 import { CMS_NAME } from "../lib/constants"
+import styles from "./index.module.scss"
 
 export default function Index({ allPosts, preview }) {
 	const highlightPost = allPosts[0]
@@ -15,17 +17,22 @@ export default function Index({ allPosts, preview }) {
 			</Head>
 			<Container>
 				<Intro />
-				{highlightPost && (
-					<HightLightPost
-						title={highlightPost.title}
-						coverImage={highlightPost.coverImage}
-						date={highlightPost.date}
-						author={highlightPost.author}
-						slug={highlightPost.slug}
-						excerpt={highlightPost.excerpt}
-					/>
-				)}
-				{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+				<div className={styles.main}>
+					<div>
+						{allPosts.map(post => (
+							<PostCard
+								key={uuidv4()}
+								title={post.title}
+								coverImage={post.coverImage}
+								date={post.date}
+								author={post.author}
+								slug={post.slug}
+								excerpt={post.excerpt}
+							/>
+						))}
+					</div>
+					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+				</div>
 			</Container>
 		</>
 	)

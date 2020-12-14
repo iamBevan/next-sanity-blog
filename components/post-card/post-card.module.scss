@@ -1,0 +1,26 @@
+.highlightpost {
+	width: 650px;
+	margin: auto;
+	border-radius: 7px;
+	color: var(--foreground);
+
+	a {
+		font-size: 26px;
+		font-weight: 900;
+
+		&:visited {
+		}
+	}
+
+	.details {
+		h3 {
+			font-size: 30px;
+			margin-bottom: 0px;
+		}
+		> time {
+			font-family: var(--font-secondary);
+			font-size: 15px;
+			font-weight: 300;
+		}
+	}
+}

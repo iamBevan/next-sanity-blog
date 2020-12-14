@@ -5,7 +5,6 @@ import styles from "./intro.module.scss"
 export function Intro() {
 	return (
 		<section className={styles.intro}>
-			<Logo size={70} />
 			<h1>Blog.</h1>
 			<h4>
 				A statically generated blog example using{" "}
