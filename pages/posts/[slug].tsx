@@ -6,7 +6,6 @@ import {
 	MoreStories,
 	PostHeader,
 	Comments,
-	Layout,
 	PostTitle,
 	Form,
 	SectionSeparator,
@@ -22,7 +21,7 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />
 	}
 	return (
-		<Layout preview={preview}>
+		<>
 			<Container>
 				{router.isFallback ? (
 					<PostTitle>Loading…</PostTitle>
@@ -56,7 +55,7 @@ export default function Post({ post, morePosts, preview }) {
 					</>
 				)}
 			</Container>
-		</Layout>
+		</>
 	)
 }
 

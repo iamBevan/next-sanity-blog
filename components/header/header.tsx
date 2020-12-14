@@ -1,19 +1,22 @@
 import Link from "next/link"
 import styles from "./header.module.scss"
 import { ToggleButton } from "../toggle-button/toggle-button"
+import { Theme, useTheme } from "../../stores/theme-context"
 
 interface HeaderProps {
 	theme: string
 }
 
-export function Header({ theme }: HeaderProps) {
+export function Header() {
+	const { theme, setTheme } = useTheme()
+
 	return (
 		<header className={styles.header}>
 			<div className={styles.wrapper}>
 				<div className={styles.menu}>
 					<h2>
 						<Link href='/'>
-							<a>Kevin's Blog</a>
+							<a>Blog</a>
 						</Link>
 						.
 					</h2>
@@ -25,12 +28,14 @@ export function Header({ theme }: HeaderProps) {
 				</div>
 				<div className={styles.buttons}>
 					<ToggleButton
-						checked={theme === "dark"}
-						onChange={e =>
-							window.__setPreferredTheme(
-								e.target.checked ? "dark" : "light"
+						checked={theme === Theme.Dark}
+						onChange={() => {
+							setTheme(
+								window.__theme === Theme.Light
+									? Theme.Dark
+									: Theme.Light
 							)
-						}
+						}}
 					/>
 				</div>
 			</div>
