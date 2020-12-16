@@ -12,7 +12,7 @@ export function PostPreview({
 	slug,
 }) {
 	return (
-		<div className={styles.postPreview}>
+		<div className={styles["post-preview"]}>
 			{/* <div>
 				<CoverImage
 					slug={slug}

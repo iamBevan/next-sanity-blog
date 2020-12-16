@@ -3,7 +3,7 @@ import styles from "./more-stories.module.scss"
 
 export function MoreStories({ posts }) {
 	return (
-		<section className={styles.moreStories}>
+		<section className={styles["more-stories"]}>
 			<h2>More Stories</h2>
 			<div className={styles.grid}>
 				{posts.map(post => (
