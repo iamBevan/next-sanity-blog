@@ -1,16 +1,21 @@
 import { CMS_NAME, CMS_URL } from "../../lib/constants"
-import { Logo } from "../icons/svgr"
+import { Theme, useTheme } from "../../stores/theme-context"
+import { Code, Logo } from "../icons/svgr"
 import styles from "./intro.module.scss"
 
 export function Intro() {
+	const { theme } = useTheme()
 	return (
 		<section className={styles.intro}>
-			<h1>Blog.</h1>
-			<h4>
-				A statically generated blog example using{" "}
-				<a href='https://nextjs.org/'>Next.js</a> and{" "}
-				<a href={CMS_URL}>Sanity.io</a>.
-			</h4>
+			<div className={styles.title}>
+				<h1>Blog.</h1>
+			</div>
+			<div className={styles.logo}>
+				<Code
+					size={400}
+					color={theme === Theme.Light ? "#FF69B4" : "#00FF7F"}
+				/>
+			</div>
 		</section>
 	)
 }

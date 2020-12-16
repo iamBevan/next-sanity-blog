@@ -17,6 +17,7 @@ body {
 body.light {
 	--background: #f9f9f9;
 	--foreground: #0d1117;
+	--pink: #f7a6ce;
 }
 
 body.dark {
@@ -24,6 +25,7 @@ body.dark {
 
 	--background: #0d1117;
 	--foreground: #f9f9f9;
+	--pink: #c24c87;
 }
 
 a {
@@ -43,7 +45,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-	color: hotpink;
+	color: #ff69b4;
 }
 
 /* selected link */

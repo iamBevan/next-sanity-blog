@@ -5,7 +5,7 @@ export function Comments({ comments = [] }) {
 	return (
 		<div className={styles.comments}>
 			<h2>Comments:</h2>
-			<ul>
+			<ul className={styles.ul}>
 				{comments?.map(({ _id, _createdAt, name, email, comment }) => (
 					<li key={_id}>
 						<hr />

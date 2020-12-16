@@ -1,8 +1,8 @@
 .highlightpost {
-	width: 650px;
-	margin: auto;
 	border-radius: 7px;
+	margin: auto;
 	padding-bottom: 30px;
+	width: 650px;
 
 	a {
 		font-size: 26px;
@@ -12,8 +12,9 @@
 	.details {
 		h3 {
 			font-size: 30px;
-			margin-bottom: 0px;
+			margin-bottom: 0;
 		}
+
 		> time {
 			font-family: var(--font-secondary);
 			font-size: 15px;
@@ -22,6 +23,7 @@
 
 		p {
 			font-size: 15px;
+			line-height: 20px;
 		}
 	}
 }

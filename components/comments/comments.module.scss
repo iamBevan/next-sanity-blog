@@ -1,16 +1,16 @@
 .comments {
-	> h2 {
+	h2 {
 		font-size: 2.75rem;
-		margin-top: 2.5rem;
-		margin-bottom: 1rem;
 		line-height: 1.2;
+		margin-bottom: 1rem;
+		margin-top: 2.5rem;
 	}
 
-	> ul {
-		> li {
+	.ul {
+		li {
 			margin-bottom: 5rem;
 
-			> hr {
+			hr {
 				margin-bottom: 5rem;
 				margin-top: 5rem;
 			}
