@@ -6,7 +6,7 @@ import { CMS_NAME } from "../lib/constants"
 import styles from "./index.module.scss"
 
 export default function Index({ allPosts, preview }) {
-	const highlightPost = allPosts[0]
+	// const highlightPost = allPosts[0]
 	const morePosts = allPosts.slice(1)
 
 	return (
