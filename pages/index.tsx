@@ -1,13 +1,15 @@
 import { Container, MoreStories, PostCard, Intro } from "../components"
-import { getAllPostsForHome } from "../lib/api"
+import { getAllPostsForHome, getAllCategories } from "../lib/api"
 import Head from "next/head"
 import { v4 as uuidv4 } from "uuid"
 import { CMS_NAME } from "../lib/constants"
 import styles from "./index.module.scss"
 
-export default function Index({ allPosts, preview }) {
+export default function Index({ allPosts, preview, allCategories }) {
 	// const highlightPost = allPosts[0]
 	const morePosts = allPosts.slice(1)
+
+	console.log({ allCategories })
 
 	return (
 		<>
@@ -40,8 +42,10 @@ export default function Index({ allPosts, preview }) {
 
 export async function getStaticProps({ preview = false }) {
 	const allPosts = await getAllPostsForHome(preview)
+	const allCategories = await getAllCategories(preview)
+
 	return {
-		props: { allPosts, preview },
+		props: { allPosts, preview, allCategories },
 		revalidate: 1,
 	}
 }
